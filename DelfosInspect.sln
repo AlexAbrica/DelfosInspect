@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "DelfosInspect", "DelfosInspect\DelfosInspect.vgdbcmake", "{AF9C63A0-B181-4339-A023-C38A0B116DCE}"
+EndProject
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "DelfosExecution", "DelfosExecution\DelfosExecution.vgdbcmake", "{771ED289-5B43-4E11-BEE7-F7BD3FD9CA4C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AF9C63A0-B181-4339-A023-C38A0B116DCE} = {AF9C63A0-B181-4339-A023-C38A0B116DCE}
+	EndProjectSection
+EndProject
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "LicenceGen", "LicenceGen\LicenceGen.vgdbcmake", "{B0A6072F-F4D2-44C2-A58A-1A400CE05546}"
+EndProject
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "Launcher", "Launcher\Launcher.vgdbcmake", "{C2534A88-43D0-440B-8897-E2932F458C2F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{771ED289-5B43-4E11-BEE7-F7BD3FD9CA4C} = {771ED289-5B43-4E11-BEE7-F7BD3FD9CA4C}
+		{AF9C63A0-B181-4339-A023-C38A0B116DCE} = {AF9C63A0-B181-4339-A023-C38A0B116DCE}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		MinSizeRel|VisualGDB = MinSizeRel|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+		RelWithDebInfo|VisualGDB = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF9C63A0-B181-4339-A023-C38A0B116DCE}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{AF9C63A0-B181-4339-A023-C38A0B116DCE}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{AF9C63A0-B181-4339-A023-C38A0B116DCE}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{AF9C63A0-B181-4339-A023-C38A0B116DCE}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{AF9C63A0-B181-4339-A023-C38A0B116DCE}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{AF9C63A0-B181-4339-A023-C38A0B116DCE}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{AF9C63A0-B181-4339-A023-C38A0B116DCE}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{AF9C63A0-B181-4339-A023-C38A0B116DCE}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+		{771ED289-5B43-4E11-BEE7-F7BD3FD9CA4C}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{771ED289-5B43-4E11-BEE7-F7BD3FD9CA4C}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{771ED289-5B43-4E11-BEE7-F7BD3FD9CA4C}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{771ED289-5B43-4E11-BEE7-F7BD3FD9CA4C}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{771ED289-5B43-4E11-BEE7-F7BD3FD9CA4C}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{771ED289-5B43-4E11-BEE7-F7BD3FD9CA4C}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{771ED289-5B43-4E11-BEE7-F7BD3FD9CA4C}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{771ED289-5B43-4E11-BEE7-F7BD3FD9CA4C}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+		{B0A6072F-F4D2-44C2-A58A-1A400CE05546}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{B0A6072F-F4D2-44C2-A58A-1A400CE05546}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{B0A6072F-F4D2-44C2-A58A-1A400CE05546}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{B0A6072F-F4D2-44C2-A58A-1A400CE05546}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{B0A6072F-F4D2-44C2-A58A-1A400CE05546}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{B0A6072F-F4D2-44C2-A58A-1A400CE05546}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{B0A6072F-F4D2-44C2-A58A-1A400CE05546}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{B0A6072F-F4D2-44C2-A58A-1A400CE05546}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+		{C2534A88-43D0-440B-8897-E2932F458C2F}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{C2534A88-43D0-440B-8897-E2932F458C2F}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{C2534A88-43D0-440B-8897-E2932F458C2F}.MinSizeRel|VisualGDB.ActiveCfg = MinSizeRel|VisualGDB
+		{C2534A88-43D0-440B-8897-E2932F458C2F}.MinSizeRel|VisualGDB.Build.0 = MinSizeRel|VisualGDB
+		{C2534A88-43D0-440B-8897-E2932F458C2F}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{C2534A88-43D0-440B-8897-E2932F458C2F}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{C2534A88-43D0-440B-8897-E2932F458C2F}.RelWithDebInfo|VisualGDB.ActiveCfg = RelWithDebInfo|VisualGDB
+		{C2534A88-43D0-440B-8897-E2932F458C2F}.RelWithDebInfo|VisualGDB.Build.0 = RelWithDebInfo|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9589E391-D8E9-4A59-9933-04D9962C5C86}
+	EndGlobalSection
+EndGlobal

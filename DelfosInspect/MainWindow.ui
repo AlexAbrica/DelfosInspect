@@ -1,0 +1,4802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1411</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1440</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>DelfosInspect</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWizard">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>511</width>
+      <height>881</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::West</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideNone</enum>
+    </property>
+    <property name="tabsClosable">
+     <bool>false</bool>
+    </property>
+    <property name="movable">
+     <bool>false</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="OpenModel">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../../../Users/AutomatizacionSIG/icons/open.png</normaloff>../../../Users/AutomatizacionSIG/icons/open.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>1</string>
+     </attribute>
+     <attribute name="toolTip">
+      <string>Open Model</string>
+     </attribute>
+     <widget class="QPushButton" name="cmdNewModel">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>30</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>New
+Model</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdOpenLast">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open Last</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblOpenModel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>441</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::PreventContextMenu</enum>
+      </property>
+      <property name="text">
+       <string>Open Model</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdOpenModelNext">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>770</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdOpenModelExit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>770</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="grpSave">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>451</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="cmdSaveModel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>161</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Save
+Model</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtPathFile">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>30</y>
+         <width>251</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPahtFile">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>0</y>
+         <width>171</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Path</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblNameModel">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>60</y>
+         <width>171</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtNameModel">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>90</y>
+         <width>251</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="cmdOpenModel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Open Model</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtFileModel">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>120</y>
+        <width>251</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblFileModel">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>90</y>
+        <width>171</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>File Model</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="grpSignals">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>451</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Signals</string>
+      </property>
+      <widget class="QGroupBox" name="grpIOs">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>200</y>
+         <width>301</width>
+         <height>170</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>IOs</string>
+       </property>
+       <widget class="QLineEdit" name="txtSensorUnit">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>30</y>
+          <width>40</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblSensorUnit">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>30</y>
+          <width>81</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Sensor</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtSolenoid">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>65</y>
+          <width>40</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblSolenoid">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>65</y>
+          <width>81</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stopper</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtButton">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>100</y>
+          <width>40</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblButton">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>100</y>
+          <width>81</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Button</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cmdSensorUnit">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>30</y>
+          <width>60</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Read</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cmdSolenoid">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>65</y>
+          <width>60</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Test</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cmdButton">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>100</y>
+          <width>60</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Read</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblSensorUnitResult">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>30</y>
+          <width>41</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblSolenoidResult">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>65</y>
+          <width>41</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblButtonResult">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>100</y>
+          <width>41</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cmdWindows">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>135</y>
+          <width>60</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Test</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblWindows">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>135</y>
+          <width>81</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Windows</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtWindows">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>135</y>
+          <width>40</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblWindowResult">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>135</y>
+          <width>41</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="grpLights">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>301</width>
+         <height>175</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Lights</string>
+       </property>
+       <widget class="QLabel" name="lblLightUp">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>61</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>V+</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblLightDown">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>65</y>
+          <width>61</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Red</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblLightLeft">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>100</y>
+          <width>61</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Green</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblLightRight">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>135</y>
+          <width>61</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Blue</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtLightUp">
+        <property name="geometry">
+         <rect>
+          <x>111</x>
+          <y>30</y>
+          <width>40</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtLightDown">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>111</x>
+          <y>65</y>
+          <width>40</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtLightLeft">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>111</x>
+          <y>100</y>
+          <width>40</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtLightRight">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>111</x>
+          <y>135</y>
+          <width>40</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cmdLightUp">
+        <property name="geometry">
+         <rect>
+          <x>171</x>
+          <y>30</y>
+          <width>60</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Test</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cmdLightDown">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>171</x>
+          <y>65</y>
+          <width>60</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Test</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cmdLightRight">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>171</x>
+          <y>135</y>
+          <width>60</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Test</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cmdLightLeft">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>171</x>
+          <y>100</y>
+          <width>60</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Test</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblLightUpResult">
+        <property name="geometry">
+         <rect>
+          <x>241</x>
+          <y>30</y>
+          <width>41</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblLightDownResult">
+        <property name="geometry">
+         <rect>
+          <x>241</x>
+          <y>65</y>
+          <width>41</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblLightRightResult">
+        <property name="geometry">
+         <rect>
+          <x>241</x>
+          <y>135</y>
+          <width>41</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblLightLeftResult">
+        <property name="geometry">
+         <rect>
+          <x>241</x>
+          <y>100</y>
+          <width>41</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="cmdOpenModelSaveIO">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>330</y>
+         <width>71</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Set IO</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="lblColorBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>690</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>LED Color</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cmdColorBox">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>690</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>RED</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>GREEN</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>BLUE</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>YELLOW</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CYAN</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MAGENTA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Control</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="cmdOpenModelSaveColor">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>690</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Set Color</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PictureSetting">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../../../Users/AutomatizacionSIG/icons/Picture Filter.png</normaloff>../../../Users/AutomatizacionSIG/icons/Picture Filter.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>2</string>
+     </attribute>
+     <attribute name="toolTip">
+      <string>Picture Position Settings</string>
+     </attribute>
+     <widget class="QLabel" name="lblPIctureSetting">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>491</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::PreventContextMenu</enum>
+      </property>
+      <property name="text">
+       <string>Picture Position Settings</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdPictureSettingTake">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Take
+Picture</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="grpCutPicture">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>451</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Cut Picture</string>
+      </property>
+      <widget class="QLineEdit" name="txtPicOffsetX">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>25</y>
+         <width>71</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtPicOffsetY">
+       <property name="geometry">
+        <rect>
+         <x>99</x>
+         <y>60</y>
+         <width>71</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtPicWidth">
+       <property name="geometry">
+        <rect>
+         <x>329</x>
+         <y>25</y>
+         <width>71</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>800</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtPicHeight">
+       <property name="geometry">
+        <rect>
+         <x>329</x>
+         <y>60</y>
+         <width>71</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>600</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPicOffsetX">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>25</y>
+         <width>81</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Offset X</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPicOffsetY">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>81</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Offset Y</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPicHeight">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>60</y>
+         <width>81</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Height</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPicWidth">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>25</y>
+         <width>81</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Width</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="grpAdvancedPropertiesPicture">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>451</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Properties</string>
+      </property>
+      <widget class="QLineEdit" name="txtPicResWidth">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>65</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>800</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtPicResHeight">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>100</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>600</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtPicISO">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>65</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>500</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtPicSS">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>100</y>
+         <width>101</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>100000</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPicResWidth">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>65</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Size X</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPicHeight_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Size Y</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPicSS">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>100</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>SS</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPicISO">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>65</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ISO</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtPicToTake">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>30</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPicToTake">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>To take</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="cmdPictureSettingNext">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>770</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdPictureSettingRefresh">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>400</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdPictureSettingCalibrate">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>770</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calib</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chkUseCalibration">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>410</y>
+        <width>171</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Use calibration</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdPictureSettingsLoadCalib">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>470</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load
+calibration file</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chkInspectionprocess">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>570</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Double inspection process</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblInspectionProcess">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>610</y>
+        <width>401</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>The use of the double inspection process is recommended when a battery model has one or more rows of batteries with mixed polarities.</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Calibration">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../../../Users/AutomatizacionSIG/icons/calib.png</normaloff>../../../Users/AutomatizacionSIG/icons/calib.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>3</string>
+     </attribute>
+     <attribute name="toolTip">
+      <string>Calibration</string>
+     </attribute>
+     <widget class="QLabel" name="lblCalibration">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>481</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::PreventContextMenu</enum>
+      </property>
+      <property name="text">
+       <string>Calibration</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdCalibrateTake">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>165</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Take Picture</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblCalibrationLegend1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>175</y>
+        <width>231</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::PreventContextMenu</enum>
+      </property>
+      <property name="text">
+       <string>1) Center the board and press Take Picture</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdCalibrate">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>330</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calibrate</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblCalibrationLegend3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>330</y>
+        <width>221</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::PreventContextMenu</enum>
+      </property>
+      <property name="text">
+       <string>3) Make sure the board covers the entire work area and press Calibrate</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblCalibrationLegend4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>420</y>
+        <width>401</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::PreventContextMenu</enum>
+      </property>
+      <property name="text">
+       <string>4) Check that the image has been corrected, if the calibration was successful, press OK, otherwise re-center the board and calibrate. To return without calibrating press exit.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdCalibrateNext">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>770</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>OK</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblCalibrationLegend2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>245</y>
+        <width>221</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::PreventContextMenu</enum>
+      </property>
+      <property name="text">
+       <string>2) Indicate the number of edges the board has in width and height</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtCalibrateWidth">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>245</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblCalibrateWidth">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>245</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Width</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtCalibrateHeight">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>280</y>
+        <width>80</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblCalibrateHeight">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>280</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Height</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>401</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>When is calibration required? When the image has distorted edges and this distortion affects the detection of units.
+
+To calibrate you need a chess pattern the size of the working area and follow the instructions.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdCalibrateExit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>770</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="SetFilter">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../../../Users/AutomatizacionSIG/icons/unit filter.png</normaloff>../../../Users/AutomatizacionSIG/icons/unit filter.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>4</string>
+     </attribute>
+     <attribute name="toolTip">
+      <string>Filter Position Units </string>
+     </attribute>
+     <widget class="QPushButton" name="cmdSetFilterTake">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Take
+Picture</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSetFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>481</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::PreventContextMenu</enum>
+      </property>
+      <property name="text">
+       <string>Filter Position Units</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="grpSetFilterPosition">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>451</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Set Filter</string>
+      </property>
+      <widget class="QComboBox" name="cmbSetFilterFilter">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>160</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="currentText">
+        <string/>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>Binary</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>HSV</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dilate</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Erode</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bilateral</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Blur</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLineEdit" name="txtSetFilterHI1">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>65</y>
+         <width>70</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtSetFilterLO1">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>65</y>
+         <width>70</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtSetFilterHI2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>100</y>
+         <width>70</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtSetFilterLO2">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>100</y>
+         <width>70</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtSetFilterHI3">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>135</y>
+         <width>70</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtSetFilterLO3">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>135</y>
+         <width>70</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblSetFilterHI1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>65</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>HI</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblSetFilterLO1">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>65</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LO</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblSetFilterLO2">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>100</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LO</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblSetFilterHI2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>HI</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblSetFilterLO3">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>135</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LO</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblSetFilterHI3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>135</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>HI</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdSetFilterAddFilter">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>170</y>
+         <width>80</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdSetFilterApplyFilter">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>80</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Apply</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdSetFilterClear">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>170</y>
+         <width>80</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QListWidget" name="lstSetFilterFilter">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>350</y>
+        <width>170</width>
+        <height>151</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdSetFilterUp">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>350</y>
+        <width>60</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Up</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdSetFilterDown">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>390</y>
+        <width>60</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Down</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdSetFilterDelete">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>460</y>
+        <width>60</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Del</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdSetFilterNext">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>770</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="FindPosition">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../../../Users/AutomatizacionSIG/icons/find.png</normaloff>../../../Users/AutomatizacionSIG/icons/find.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>5</string>
+     </attribute>
+     <attribute name="toolTip">
+      <string>Find Units Position</string>
+     </attribute>
+     <widget class="QGroupBox" name="grpEdges">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>451</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Find Edges</string>
+      </property>
+      <widget class="QLineEdit" name="txtMinEdges">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>40</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Minimum number of pixels on perimeter</string>
+       </property>
+       <property name="text">
+        <string>50</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdFindPositionEdges">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>161</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Draw the edges of the units found.</string>
+       </property>
+       <property name="text">
+        <string>Show
+Edges</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblMinEdges">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>40</y>
+         <width>60</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Minimum number of pixels on perimeter</string>
+       </property>
+       <property name="text">
+        <string>Min</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtMaxEdges">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>40</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Maximum number of pixels in the perimeter</string>
+       </property>
+       <property name="text">
+        <string>180</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblLMaxEdges">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>60</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Maximum number of pixels in the perimeter</string>
+       </property>
+       <property name="text">
+        <string>Max</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="cmdFindPositionTake">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Take
+Picture</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblFindPosition_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>481</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::PreventContextMenu</enum>
+      </property>
+      <property name="text">
+       <string>Find Units Position</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="grpLocatePositions">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>290</y>
+        <width>451</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Locate Positions</string>
+      </property>
+      <widget class="QLineEdit" name="txtFindPositionSquare">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>50</y>
+         <width>61</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>It is the size of the square containing the pixels to be evaluated and is drawn on the image.</string>
+       </property>
+       <property name="text">
+        <string>60</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblLFindPositionsSquare">
+       <property name="geometry">
+        <rect>
+         <x>241</x>
+         <y>40</y>
+         <width>91</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>It is the size of the square containing the pixels to be evaluated and is drawn on the image.</string>
+       </property>
+       <property name="text">
+        <string>Size
+Square</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblLFindPositionsMargin">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>It is the space between the midpoint and the highest or lowest point, which allows generating the row.</string>
+       </property>
+       <property name="text">
+        <string>Margin</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtFindPositionMargin">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>50</y>
+         <width>61</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>It is the space between the midpoint and the highest or lowest point, which allows generating the row.</string>
+       </property>
+       <property name="text">
+        <string>20</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdFindPositionPositions">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>161</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Creates an array with the units found, if one already exists, it will overwrite it.</string>
+       </property>
+       <property name="text">
+        <string>Show
+Positions</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblLFindPositionsElongation">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>90</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Ratio of width to height elongation, maximum acceptable. The number is a percentage.</string>
+       </property>
+       <property name="text">
+        <string>Elongation</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtFindPositionElongation">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>90</y>
+         <width>61</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Ratio of width to height elongation, maximum acceptable. The number is a percentage.</string>
+       </property>
+       <property name="text">
+        <string>30</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="cmdFindPositionNext">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>770</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cmbFindUnitPosPolarity">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>510</y>
+        <width>181</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Displays the unit type selected from the unit matrix.</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>All position</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Positive</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Negative</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Disabled</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="lblFindUnitCurrentInspection">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>510</y>
+        <width>131</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Displays the unit type selected from the unit matrix.</string>
+      </property>
+      <property name="text">
+       <string>Show Positions</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="FindUnits">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../../../Users/AutomatizacionSIG/icons/filter.png</normaloff>../../../Users/AutomatizacionSIG/icons/filter.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>6</string>
+     </attribute>
+     <attribute name="toolTip">
+      <string>Filter Units Evaluate</string>
+     </attribute>
+     <widget class="QLabel" name="lblFindUnits">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>461</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::PreventContextMenu</enum>
+      </property>
+      <property name="text">
+       <string>Filter Units Evaluate</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdFindUnitsTake">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Take
+Picture</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="grpSetFilterUnit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>451</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Set Filter</string>
+      </property>
+      <widget class="QComboBox" name="cmbFindUnitsFilter">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>160</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>Binary</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>HSV</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Dilate</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Erode</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bilateral</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Blur</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLineEdit" name="txtFindUnitsHI1">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>65</y>
+         <width>70</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtFindUnitsLO1">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>65</y>
+         <width>70</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtFindUnitsHI2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>100</y>
+         <width>70</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtFindUnitsLO2">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>100</y>
+         <width>70</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtFindUnitsHI3">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>135</y>
+         <width>70</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtFindUnitsLO3">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>135</y>
+         <width>70</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblFindUnitsHI1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>65</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>HI</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblFindUnitsLO1">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>65</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LO</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblFindUnitsLO2">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>100</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LO</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblFindUnitsHI2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>HI</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblFindUnitsLO3">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>135</y>
+         <width>75</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>LO</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblFindUnitsHI3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>135</y>
+         <width>75</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>HI</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdFindUnitsAddFilter">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>170</y>
+         <width>80</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdFindUnitsApplyFilter">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>80</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Apply</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdFindUnitsClear">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>170</y>
+         <width>80</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="listFindUnits">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>170</width>
+         <height>151</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdFindUnitsUp">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>220</y>
+         <width>60</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Up</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdFindUnitsDown">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>260</y>
+         <width>60</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Down</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdFindUnitsDelete">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>330</y>
+         <width>60</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Del</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdFindUnitsShow">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>310</y>
+         <width>141</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Show
+Positions</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSpinBox" name="numTakeStabilize">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>80</y>
+        <width>41</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>20</number>
+      </property>
+      <property name="value">
+       <number>1</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblModelStabilize">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>80</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Take</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdFindUnitsNext">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>770</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Next</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cmbFilterUnitEvalPolarity">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>80</y>
+        <width>161</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="currentText">
+       <string/>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Positive</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Negative</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="lblFilterUnitCurrentInspection">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>50</y>
+        <width>161</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Current Inspection</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="grpAdvancedPropertiesImage">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>550</y>
+        <width>251</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Image Settings Evaluate</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QLineEdit" name="txtImaISO">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>80</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string>500</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtImaSS">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>120</y>
+         <width>101</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>100000</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblImaSS">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>SS</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblImaISO">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ISO</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblImaToTake">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>75</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>To take</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtImaToTake">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>40</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QCheckBox" name="chkUseImageSettingsEvaluate">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>520</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Advanced</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Training">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../../../Users/AutomatizacionSIG/icons/training1600.png</normaloff>../../../Users/AutomatizacionSIG/icons/training1600.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>7</string>
+     </attribute>
+     <attribute name="toolTip">
+      <string>Training Model</string>
+     </attribute>
+     <widget class="QLabel" name="lblTrainModel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>421</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::PreventContextMenu</enum>
+      </property>
+      <property name="text">
+       <string>Training Model</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdTrainingNext">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>770</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Finish</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdTrainginEvaluate">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Training</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblCountingColumns">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>81</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Columns</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdTest">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Test</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblColumnsTest">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>230</y>
+        <width>91</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblResult">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>201</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>255</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Text">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>120</red>
+            <green>120</green>
+            <blue>120</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblCountingRows">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>200</y>
+        <width>81</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Rows</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblRowsTest">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>200</y>
+        <width>91</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="lstErrors">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>250</y>
+        <width>241</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblErrorList">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>230</y>
+        <width>171</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Error List</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdTestModelExit">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>770</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="numTakeTraining">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>120</y>
+        <width>51</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>20</number>
+      </property>
+      <property name="value">
+       <number>1</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblModelTakes">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>120</y>
+        <width>41</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Take</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chkSameUnit">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>70</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Same unit</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdBW">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show segmented</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="chkAdd">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>40</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add training</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="grpStatus">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>440</y>
+        <width>421</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Status Training</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <widget class="QListWidget" name="lstTraining">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>131</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblStatusRows">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>81</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Rows</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblMaxV">
+       <property name="geometry">
+        <rect>
+         <x>159</x>
+         <y>20</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Max value</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblMinV">
+       <property name="geometry">
+        <rect>
+         <x>159</x>
+         <y>50</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Min value</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblAverage">
+       <property name="geometry">
+        <rect>
+         <x>159</x>
+         <y>80</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Average</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblMaxT">
+       <property name="geometry">
+        <rect>
+         <x>149</x>
+         <y>110</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Max tolerance</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblMinT">
+       <property name="geometry">
+        <rect>
+         <x>149</x>
+         <y>141</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Min tolerance</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblShowMaxV">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblShowMinT">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>140</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblShowAverage">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>80</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblShowMaxT">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>110</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblShowMinV">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>50</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="chkPolarity">
+       <property name="geometry">
+        <rect>
+         <x>189</x>
+         <y>170</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Polarity</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPolarity">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>161</y>
+         <width>121</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QDoubleSpinBox" name="dsDStandarMax">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>360</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>1</number>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="dsDStandarMin">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>400</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="decimals">
+       <number>1</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblDStandarMax">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>360</y>
+        <width>131</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>D Standar Max</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblDStandarMin">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>400</y>
+        <width>131</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>D Standar Min</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSummary">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>360</y>
+        <width>231</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>22</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cmdTestModelRelease">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>770</y>
+        <width>161</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Release stoppers</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cmbShowSecondFilter">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>50</y>
+        <width>161</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="currentText">
+       <string/>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Positive</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Negative</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="lblShowCurrentInspection">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>20</y>
+        <width>161</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Current Inspection</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="picImageShow">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>0</y>
+      <width>900</width>
+      <height>900</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string>Picture</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+    <property name="indent">
+     <number>-1</number>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>tabWizard</tabstop>
+  <tabstop>cmdNewModel</tabstop>
+  <tabstop>cmdOpenLast</tabstop>
+  <tabstop>cmdOpenModelNext</tabstop>
+  <tabstop>cmdOpenModelExit</tabstop>
+  <tabstop>cmdSaveModel</tabstop>
+  <tabstop>txtPathFile</tabstop>
+  <tabstop>cmdPictureSettingTake</tabstop>
+  <tabstop>txtPicToTake</tabstop>
+  <tabstop>txtPicResWidth</tabstop>
+  <tabstop>txtPicResHeight</tabstop>
+  <tabstop>txtPicISO</tabstop>
+  <tabstop>txtPicSS</tabstop>
+  <tabstop>txtPicOffsetX</tabstop>
+  <tabstop>txtPicOffsetY</tabstop>
+  <tabstop>txtPicWidth</tabstop>
+  <tabstop>txtPicHeight</tabstop>
+  <tabstop>cmdPictureSettingRefresh</tabstop>
+  <tabstop>chkUseCalibration</tabstop>
+  <tabstop>cmdPictureSettingCalibrate</tabstop>
+  <tabstop>cmdPictureSettingNext</tabstop>
+  <tabstop>cmdCalibrateTake</tabstop>
+  <tabstop>txtCalibrateWidth</tabstop>
+  <tabstop>txtCalibrateHeight</tabstop>
+  <tabstop>cmdCalibrate</tabstop>
+  <tabstop>cmdCalibrateNext</tabstop>
+  <tabstop>cmdCalibrateExit</tabstop>
+  <tabstop>cmdSetFilterTake</tabstop>
+  <tabstop>cmbSetFilterFilter</tabstop>
+  <tabstop>txtSetFilterHI1</tabstop>
+  <tabstop>txtSetFilterLO1</tabstop>
+  <tabstop>txtSetFilterHI2</tabstop>
+  <tabstop>txtSetFilterLO2</tabstop>
+  <tabstop>txtSetFilterHI3</tabstop>
+  <tabstop>txtSetFilterLO3</tabstop>
+  <tabstop>cmdSetFilterApplyFilter</tabstop>
+  <tabstop>cmdSetFilterAddFilter</tabstop>
+  <tabstop>lstSetFilterFilter</tabstop>
+  <tabstop>cmdSetFilterUp</tabstop>
+  <tabstop>cmdSetFilterDelete</tabstop>
+  <tabstop>cmdSetFilterDown</tabstop>
+  <tabstop>cmdSetFilterNext</tabstop>
+  <tabstop>cmdFindPositionTake</tabstop>
+  <tabstop>txtMaxEdges</tabstop>
+  <tabstop>txtMinEdges</tabstop>
+  <tabstop>cmdFindPositionEdges</tabstop>
+  <tabstop>txtFindPositionMargin</tabstop>
+  <tabstop>txtFindPositionSquare</tabstop>
+  <tabstop>cmdFindPositionPositions</tabstop>
+  <tabstop>cmdFindPositionNext</tabstop>
+  <tabstop>cmdFindUnitsTake</tabstop>
+  <tabstop>cmbFindUnitsFilter</tabstop>
+  <tabstop>txtFindUnitsHI1</tabstop>
+  <tabstop>txtFindUnitsLO1</tabstop>
+  <tabstop>txtFindUnitsHI2</tabstop>
+  <tabstop>txtFindUnitsLO2</tabstop>
+  <tabstop>txtFindUnitsHI3</tabstop>
+  <tabstop>txtFindUnitsLO3</tabstop>
+  <tabstop>cmdFindUnitsApplyFilter</tabstop>
+  <tabstop>cmdFindUnitsAddFilter</tabstop>
+  <tabstop>listFindUnits</tabstop>
+  <tabstop>cmdFindUnitsUp</tabstop>
+  <tabstop>cmdFindUnitsDelete</tabstop>
+  <tabstop>cmdFindUnitsDown</tabstop>
+  <tabstop>cmdFindUnitsShow</tabstop>
+  <tabstop>cmdFindUnitsNext</tabstop>
+  <tabstop>cmdTrainginEvaluate</tabstop>
+  <tabstop>cmdTrainingNext</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cmdOpenModelExit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OpenModelExit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>142</x>
+     <y>782</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdOpenModelNext</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OpenModelNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>492</x>
+     <y>782</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdPictureSettingTake</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>PictureSettingTakePicture()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>222</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdPictureSettingRefresh</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>PictureSettingRefresh()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>222</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdPictureSettingNext</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>PictureSettingNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>492</x>
+     <y>782</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdCalibrate</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Calibrate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>420</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdCalibrateNext</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>CalibrateNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>492</x>
+     <y>782</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdCalibrateTake</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>CalibrateTakePicture()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>398</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdPictureSettingCalibrate</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>PictureSettingCalibrate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>142</x>
+     <y>782</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdCalibrateExit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>CalibrateExit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>142</x>
+     <y>782</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbSetFilterFilter</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SetFilterFilter(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>162</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdSetFilterTake</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SetFilterTake()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdSetFilterApplyFilter</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SetFilterApply()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>131</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdSetFilterAddFilter</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SetFilterAdd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>391</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lstSetFilterFilter</sender>
+   <signal>currentRowChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SetFilterSelect(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdSetFilterUp</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SetFilterUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdSetFilterDown</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SetFilterDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>402</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdSetFilterDelete</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SetFilterDelete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>472</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFindPositionTake</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindPositionTake()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFindPositionEdges</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindPositionEdges()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFindPositionPositions</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindPositionShow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>432</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFindPositionNext</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindPositionNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>492</x>
+     <y>782</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdSetFilterNext</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SetFilterNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>492</x>
+     <y>782</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdTrainginEvaluate</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>TrainingEvaluate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>72</x>
+     <y>899</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFindUnitsTake</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindUnitTake()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>22</x>
+     <y>881</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbFindUnitsFilter</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindUnitFilter(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>211</x>
+     <y>162</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>171</x>
+     <y>884</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFindUnitsApplyFilter</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindUnitApply()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>131</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>153</x>
+     <y>883</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFindUnitsAddFilter</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindUnitAdd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>391</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>91</x>
+     <y>885</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFindUnitsUp</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindUnitUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>59</x>
+     <y>854</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFindUnitsDelete</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindUnitDelete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>472</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>88</x>
+     <y>858</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFindUnitsDown</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindUnitDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>402</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>164</x>
+     <y>856</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFindUnitsShow</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindUnitShow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>182</x>
+     <y>602</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>127</x>
+     <y>865</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFindUnitsNext</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindUnitNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>492</x>
+     <y>782</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>204</x>
+     <y>865</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listFindUnits</sender>
+   <signal>currentRowChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindUnitSelect(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>168</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>44</x>
+     <y>866</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdTrainingNext</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>TrainingNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>492</x>
+     <y>782</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>59</x>
+     <y>849</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdSaveModel</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SaveModel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>874</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdOpenModel</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OpenModel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>202</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>63</x>
+     <y>823</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdOpenLast</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OpenLastModel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>202</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>147</x>
+     <y>812</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdTest</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>TestModel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>104</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdBW</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ShowBW(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>172</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>114</x>
+     <y>834</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdTestModelRelease</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Release(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>782</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>803</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdNewModel</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OpenModelNew()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>438</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lstTraining</sender>
+   <signal>currentRowChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>TrainingSelectRow(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>182</x>
+     <y>522</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>873</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdPictureSettingsLoadCalib</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>PictureSettingLoadCalib()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>222</x>
+     <y>482</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>371</x>
+     <y>811</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdLightUp</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>TestUp(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>401</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>838</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdLightDown</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>TestDown(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>436</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>422</x>
+     <y>854</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdLightLeft</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>TestLeft(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>471</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>485</x>
+     <y>826</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdLightRight</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>TestRight(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>506</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>352</x>
+     <y>869</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdSensorUnit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ReadSensor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>291</x>
+     <y>571</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>507</x>
+     <y>863</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdSolenoid</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>TestStopper(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>291</x>
+     <y>606</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>517</x>
+     <y>836</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ReadButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>291</x>
+     <y>641</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>460</x>
+     <y>822</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdOpenModelSaveIO</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OpenModelSaveIO()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>472</x>
+     <y>682</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>392</x>
+     <y>719</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdWindows</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>TestWindows(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>291</x>
+     <y>676</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>246</x>
+     <y>724</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chkPolarity</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Polarity(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>321</x>
+     <y>642</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>263</x>
+     <y>880</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdColorBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SelectedColor(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>282</x>
+     <y>702</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>630</x>
+     <y>383</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdOpenModelSaveColor</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SetColor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>337</x>
+     <y>717</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>706</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chkInspectionprocess</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>InspectionProcess(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>607</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>706</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbFilterUnitEvalPolarity</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FilterUnitsChangePolarity(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>302</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>705</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbShowSecondFilter</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ChangePolarity(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>412</x>
+     <y>66</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>705</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdSetFilterClear</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SetFilterClear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>441</x>
+     <y>321</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>705</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdFindUnitsClear</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindUnitsClear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>441</x>
+     <y>321</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>705</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbFindUnitPosPolarity</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>FindUnitsChangePolarity(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>302</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>705</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chkUseImageSettingsEvaluate</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ImageSettingTake(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>126</x>
+     <y>546</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>705</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>TrainingPolarityP()</slot>
+  <slot>TrainingSendData(int,int)</slot>
+  <slot>TrainingPolarityN()</slot>
+  <slot>OpenModelNext()</slot>
+  <slot>OpenModelExit()</slot>
+  <slot>OpenModel()</slot>
+  <slot>OpenModelNew()</slot>
+  <slot>PictureSettingTakePicture()</slot>
+  <slot>PictureSettingRefresh()</slot>
+  <slot>PictureSettingNext()</slot>
+  <slot>CalibrateTakePicture()</slot>
+  <slot>Calibrate()</slot>
+  <slot>CalibrateNext()</slot>
+  <slot>PictureSettingCalibrate()</slot>
+  <slot>CalibrateExit()</slot>
+  <slot>SetFilterFilter(int)</slot>
+  <slot>SetFilterApply()</slot>
+  <slot>SetFilterTake()</slot>
+  <slot>SetFilterAdd()</slot>
+  <slot>SetFilterSelect(int)</slot>
+  <slot>SetFilterClickItem(QListWidgetItem*)</slot>
+  <slot>SetFilterUp()</slot>
+  <slot>SetFilterDown()</slot>
+  <slot>SetFilterDelete()</slot>
+  <slot>FindPositionShow()</slot>
+  <slot>FindPositionEdges()</slot>
+  <slot>FindPositionTake()</slot>
+  <slot>SetFilterNext()</slot>
+  <slot>FindPositionNext()</slot>
+  <slot>Close()</slot>
+  <slot>ImageSettingTake(bool)</slot>
+  <slot>ImageSettingConfig(int)</slot>
+  <slot>ImageSettingNext()</slot>
+  <slot>ImageSettingRefresh()</slot>
+  <slot>TrainingEvaluate()</slot>
+  <slot>FindUnitTake()</slot>
+  <slot>FindUnitFilter(int)</slot>
+  <slot>FindUnitApply()</slot>
+  <slot>FindUnitAdd()</slot>
+  <slot>FindUnitSelect(int)</slot>
+  <slot>FindUnitUp()</slot>
+  <slot>FindUnitDown()</slot>
+  <slot>FindUnitDelete()</slot>
+  <slot>FindUnitNext()</slot>
+  <slot>FindUnitShow()</slot>
+  <slot>TestModel()</slot>
+  <slot>TestModelFinish()</slot>
+  <slot>TrainingNext()</slot>
+  <slot>SaveModel()</slot>
+  <slot>OpenLastModel()</slot>
+  <slot>FindUnitEstabilized()</slot>
+  <slot>ShowBW(bool)</slot>
+  <slot>Release(bool)</slot>
+  <slot>OpenModelFind()</slot>
+  <slot>TrainingSelectRow(int)</slot>
+  <slot>PictureSettingLoadCalib()</slot>
+  <slot>TestUp(bool)</slot>
+  <slot>TestDown(bool)</slot>
+  <slot>TestLeft(bool)</slot>
+  <slot>TestRight(bool)</slot>
+  <slot>ReadSensor()</slot>
+  <slot>TestStopper(bool)</slot>
+  <slot>ReadButton()</slot>
+  <slot>OpenModelSaveIO()</slot>
+  <slot>TestWindows(bool)</slot>
+  <slot>Polarity(bool)</slot>
+  <slot>SelectedColor(int)</slot>
+  <slot>SetColor()</slot>
+  <slot>InspectionProcess(bool)</slot>
+  <slot>ChangePolarity(int)</slot>
+  <slot>SetFilterClear()</slot>
+  <slot>FindUnitsClear()</slot>
+  <slot>FilterPosChangePolarity(int)</slot>
+  <slot>FilterUnitsChangePolarity(int)</slot>
+  <slot>FindUnitsChangePolarity(int)</slot>
+  <slot>savePolarity()</slot>
+ </slots>
+</ui>

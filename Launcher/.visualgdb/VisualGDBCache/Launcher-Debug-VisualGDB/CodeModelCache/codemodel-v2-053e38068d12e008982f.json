@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.7"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "DEBUG",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Launcher",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Launcher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Launcher-DEBUG-acc2ca858c3ca491fe13.json",
+					"name" : "Launcher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Launcher_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Launcher_autogen-DEBUG-8d68c971262b1788ae8c.json",
+					"name" : "Launcher_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/source/Delfos_2dev/DelfosInspect-Dev-2inspection/Launcher/build/VisualGDB/Debug",
+		"source" : "D:/source/Delfos_2dev/DelfosInspect-Dev-2inspection/Launcher"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

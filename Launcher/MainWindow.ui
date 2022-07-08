@@ -1,0 +1,1510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Launcher</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabGlobal">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>800</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>800</width>
+      <height>1080</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tabLogin">
+     <attribute name="title">
+      <string>Login</string>
+     </attribute>
+     <widget class="QGroupBox" name="grpLogin">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>800</width>
+        <height>400</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>800</width>
+        <height>400</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>500</width>
+        <height>110</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Login Launcher</string>
+      </property>
+      <widget class="QLineEdit" name="txtUserName">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>140</y>
+         <width>250</width>
+         <height>30</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblUserName">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>100</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>User name</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdLogin">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>130</y>
+         <width>100</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Login</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblPassword">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>190</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Password</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtPassword">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>220</y>
+         <width>250</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdClose">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>220</y>
+         <width>100</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Exit</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabLaunch">
+     <attribute name="title">
+      <string>Launch</string>
+     </attribute>
+     <widget class="QGroupBox" name="grpLaunch">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>800</width>
+        <height>460</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Select launch program</string>
+      </property>
+      <widget class="QPushButton" name="cmdExit">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>410</y>
+         <width>100</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Exit</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdLaunchExecution">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>230</y>
+         <width>251</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Launch
+Delfos Execution</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdLaunchInspection">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>251</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Launch
+Delfos Inspection</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblDescriptionInspection">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>40</y>
+         <width>371</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Launch Delphi Inspection program. This program can perform the training of models to be inspected.</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblDescriptionExecution">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>230</y>
+         <width>371</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Launch program Delfos Execution. This program performs the inspection for the production process with a previously trained model.</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabUsers">
+     <attribute name="title">
+      <string>Users</string>
+     </attribute>
+     <widget class="QGroupBox" name="grpManageUsers">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>800</width>
+        <height>470</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Manage Users</string>
+      </property>
+      <widget class="QListWidget" name="lstUserList">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>221</width>
+         <height>371</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblUserList">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>User list</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdEdit">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>30</y>
+         <width>100</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Edit</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdDelete">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>30</y>
+         <width>100</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdCreate">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>30</y>
+         <width>100</width>
+         <height>50</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Create</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="grpUserInformation">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>100</y>
+         <width>531</width>
+         <height>351</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>User Information</string>
+       </property>
+       <widget class="QLineEdit" name="txtInfoName">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>50</y>
+          <width>391</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblInfoName">
+        <property name="geometry">
+         <rect>
+          <x>39</x>
+          <y>50</y>
+          <width>71</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtInfoUserName">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>90</y>
+          <width>140</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblInfoUserName">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>User Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblInfoTitle">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>130</y>
+          <width>51</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Title</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cmbTitles">
+        <property name="geometry">
+         <rect>
+          <x>71</x>
+          <y>130</y>
+          <width>131</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Operator</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Technician</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Manager</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Developer</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="lblInfoPassword">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>90</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Password</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="txtInfoPassword">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>90</y>
+          <width>140</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="txtDescriptionTitle">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>170</y>
+          <width>480</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblInfoWorkshift">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>130</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Work shift</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cmbWorkShift">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>130</y>
+          <width>191</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>-1</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>Shift 1 - Morning</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Shift 2 - Afternoon</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Shift 3 - Night</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Shift 4 - Mixed</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Shift 5 - Extended</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="cmdSave">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>290</y>
+          <width>100</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Save</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cmdDiscard">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>290</y>
+          <width>100</width>
+          <height>50</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Discard</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabManage">
+     <attribute name="title">
+      <string>Manage</string>
+     </attribute>
+     <widget class="QGroupBox" name="grpManageFiles">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>800</width>
+        <height>470</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Manage Files</string>
+      </property>
+      <widget class="QTreeWidget" name="treeWidget">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>60</y>
+         <width>341</width>
+         <height>301</height>
+        </rect>
+       </property>
+       <column>
+        <property name="text">
+         <string notr="true">1</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QLabel" name="lblFileTree">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>File Tree</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>40</y>
+         <width>400</width>
+         <height>400</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radPrograms">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>370</y>
+         <width>120</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Programs</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radLogUnits">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>370</y>
+         <width>120</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Log Units</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radLogProcess">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>370</y>
+         <width>131</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Log Process</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdImport">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>410</y>
+         <width>100</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Import</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdExport">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>410</y>
+         <width>100</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Export</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="cmdOpenFile">
+       <property name="geometry">
+        <rect>
+         <x>249</x>
+         <y>410</y>
+         <width>110</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Open File</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabHardware">
+     <attribute name="title">
+      <string>Hardware</string>
+     </attribute>
+     <widget class="QGroupBox" name="grpIO">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>791</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Inptu/Output</string>
+      </property>
+      <widget class="QGroupBox" name="grpInspectionLight">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>180</width>
+         <height>290</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Inspection Light</string>
+       </property>
+       <widget class="QCheckBox" name="chkLight_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>240</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Light 6</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="chkLight_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Light 2</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="chkLight_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Light 5</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="chkLight_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Light 3</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="chkLight_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Light 4</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="chkLight_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Light 1</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spnLight_1">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>40</y>
+          <width>50</width>
+          <height>30</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spnLight_2">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>80</y>
+          <width>50</width>
+          <height>30</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spnLight_3">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>120</y>
+          <width>50</width>
+          <height>30</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spnLight_4">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>160</y>
+          <width>50</width>
+          <height>30</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spnLight_5">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>200</y>
+          <width>50</width>
+          <height>30</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spnLight_6">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>240</y>
+          <width>50</width>
+          <height>30</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="grpSignalsInput">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>30</y>
+         <width>211</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Signals Input</string>
+       </property>
+       <widget class="QCheckBox" name="chkSingalInput_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>121</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Sensor Unit</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spnSignalInput_1">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>40</y>
+          <width>50</width>
+          <height>30</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spnSignalInput_2">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>80</y>
+          <width>50</width>
+          <height>30</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="chkSingalInput_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>121</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Button</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="grpSignalsOutput">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>180</y>
+         <width>211</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Signals Output</string>
+       </property>
+       <widget class="QCheckBox" name="chkSingalOutput_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>121</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stopper</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spnSignalOutput_1">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>40</y>
+          <width>50</width>
+          <height>30</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spnSignalOutput_2">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>80</y>
+          <width>50</width>
+          <height>30</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="chkSingalOutput_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>121</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Button</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="grpTowerLight">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>30</y>
+         <width>180</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Tower Light</string>
+       </property>
+       <widget class="QCheckBox" name="chkTower_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Green</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spnTower_1">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>40</y>
+          <width>50</width>
+          <height>30</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spnTower_2">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>80</y>
+          <width>50</width>
+          <height>30</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="chkTower_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Yellow</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spnTower_3">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>120</y>
+          <width>50</width>
+          <height>30</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="chkTower_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>100</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Red</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>txtUserName</tabstop>
+  <tabstop>txtPassword</tabstop>
+  <tabstop>cmdLogin</tabstop>
+  <tabstop>tabGlobal</tabstop>
+  <tabstop>cmdClose</tabstop>
+  <tabstop>cmdLaunchInspection</tabstop>
+  <tabstop>cmdLaunchExecution</tabstop>
+  <tabstop>cmdExit</tabstop>
+  <tabstop>lstUserList</tabstop>
+  <tabstop>cmdEdit</tabstop>
+  <tabstop>cmdCreate</tabstop>
+  <tabstop>txtInfoName</tabstop>
+  <tabstop>txtInfoUserName</tabstop>
+  <tabstop>txtInfoPassword</tabstop>
+  <tabstop>cmbTitles</tabstop>
+  <tabstop>cmbWorkShift</tabstop>
+  <tabstop>cmdSave</tabstop>
+  <tabstop>cmdDiscard</tabstop>
+  <tabstop>cmdDelete</tabstop>
+  <tabstop>treeWidget</tabstop>
+  <tabstop>radPrograms</tabstop>
+  <tabstop>radLogUnits</tabstop>
+  <tabstop>radLogProcess</tabstop>
+  <tabstop>cmdImport</tabstop>
+  <tabstop>cmdExport</tabstop>
+  <tabstop>cmdOpenFile</tabstop>
+  <tabstop>chkLight_1</tabstop>
+  <tabstop>spnLight_1</tabstop>
+  <tabstop>chkLight_2</tabstop>
+  <tabstop>spnLight_2</tabstop>
+  <tabstop>chkLight_3</tabstop>
+  <tabstop>spnLight_3</tabstop>
+  <tabstop>chkLight_4</tabstop>
+  <tabstop>spnLight_4</tabstop>
+  <tabstop>chkLight_5</tabstop>
+  <tabstop>spnLight_5</tabstop>
+  <tabstop>chkLight_6</tabstop>
+  <tabstop>spnLight_6</tabstop>
+  <tabstop>chkSingalInput_1</tabstop>
+  <tabstop>spnSignalInput_1</tabstop>
+  <tabstop>chkSingalInput_2</tabstop>
+  <tabstop>spnSignalInput_2</tabstop>
+  <tabstop>chkSingalOutput_1</tabstop>
+  <tabstop>spnSignalOutput_1</tabstop>
+  <tabstop>chkSingalOutput_2</tabstop>
+  <tabstop>spnSignalOutput_2</tabstop>
+  <tabstop>chkTower_1</tabstop>
+  <tabstop>spnTower_1</tabstop>
+  <tabstop>chkTower_2</tabstop>
+  <tabstop>spnTower_2</tabstop>
+  <tabstop>chkTower_3</tabstop>
+  <tabstop>spnTower_3</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cmdLogin</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Login()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>511</x>
+     <y>162</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdClose</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>526</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>555</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>txtPassword</sender>
+   <signal>returnPressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Login()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>332</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>553</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>txtUserName</sender>
+   <signal>returnPressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Login()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>220</x>
+     <y>183</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>250</x>
+     <y>531</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdLaunchInspection</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>LaunchInspection()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>557</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdLaunchExecution</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>LaunchExecution()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>429</x>
+     <y>540</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdExit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Exit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>765</x>
+     <y>426</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>616</x>
+     <y>535</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lstUserList</sender>
+   <signal>currentRowChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>UserListSelected(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>73</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>304</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdEdit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>EditUsers()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>302</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>504</x>
+     <y>517</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdCreate</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>CreateUsers()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>417</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>577</x>
+     <y>542</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdDelete</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>DeleteUsers()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>731</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>679</x>
+     <y>546</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbTitles</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SelectedTitle(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>361</x>
+     <y>275</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>455</x>
+     <y>566</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbWorkShift</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SelectedShift(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>649</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>560</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdSave</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>SaveUser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>704</x>
+     <y>452</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>609</x>
+     <y>560</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdDiscard</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>DiscardUser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>307</x>
+     <y>446</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>544</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeWidget</sender>
+   <signal>itemClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ItemSelected(QTreeWidgetItem*,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>525</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radPrograms</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ShowPrograms(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>46</x>
+     <y>422</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>352</x>
+     <y>586</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radLogUnits</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ShowUnits(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>416</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>574</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radLogProcess</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>ShowProcess(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>270</x>
+     <y>411</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>412</x>
+     <y>527</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdImport</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Import()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>86</x>
+     <y>462</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>518</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdExport</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>Export()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>202</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>255</x>
+     <y>513</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmdOpenFile</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>OpenFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>305</x>
+     <y>457</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>354</x>
+     <y>509</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Login()</slot>
+  <slot>Exit()</slot>
+  <slot>LaunchInspection()</slot>
+  <slot>LaunchExecution()</slot>
+  <slot>UserListSelected(int)</slot>
+  <slot>EditUsers()</slot>
+  <slot>CreateUsers()</slot>
+  <slot>DeleteUsers()</slot>
+  <slot>SelectedTitle(int)</slot>
+  <slot>SelectedShift(int)</slot>
+  <slot>DiscardUser()</slot>
+  <slot>SaveUser()</slot>
+  <slot>ItemSelected(QTreeWidgetItem*,int)</slot>
+  <slot>ShowPrograms(bool)</slot>
+  <slot>ShowUnits(bool)</slot>
+  <slot>ShowProcess(bool)</slot>
+  <slot>Import()</slot>
+  <slot>Export()</slot>
+  <slot>OpenFile()</slot>
+ </slots>
+</ui>
